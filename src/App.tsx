@@ -10,23 +10,41 @@ import Photos from "./pages/Photos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Marge's Bar and Grill</h1>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/menu"}>Menu</Link>
-        <Link to={"/contact"}>Contact Us</Link>
-        <Link to={"/events"}>Events</Link>
-        <Link to={"/photos"}>Photos</Link>
+    <div className="App bg-black min-h-screen">
+      <header className="App-header bg-red-600">
+        <div className=" flex flex-col place-content-center h-full">
+          <h1 className="text-white text-4xl">Marge's</h1>
+          <h2 className="text-white text-xl">Bar and Grill</h2>
+        </div>
+        <nav className="shadow-lg">
+          <ul className="text-white flex flex-row justify-around mt-10">
+            <li>
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link to={"/menu"}>Menu</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}>Contact Us</Link>
+            </li>
+            <li>
+              <Link to={"/events"}>Events</Link>
+            </li>
+            <li>
+              <Link to={"/photos"}>Photos</Link>
+            </li>
+          </ul>
+        </nav>
       </header>
-
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/menu" element={<Menu />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/events" element={<Events />}></Route>
-        <Route path="/photos" element={<Photos />}></Route>
-      </Routes>
+      <body className="flex items-stretch justify-center align-center h-full w-full">
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/menu" element={<Menu />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/events" element={<Events />}></Route>
+          <Route path="/photos" element={<Photos />}></Route>
+        </Routes>
+      </body>
     </div>
   );
 }
