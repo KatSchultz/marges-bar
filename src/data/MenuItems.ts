@@ -144,6 +144,78 @@ export const burgers: MenuItem[] = [
   },
 ];
 
+export const sandwiches: MenuItem[] = [
+  {
+    name: "Marge's Middle Eastern",
+    description:
+      "Sauteed ground round with green pepper and green onions topped with cheese & Ranch dressing, wrapped in pita bread",
+    price: "$10.00",
+  },
+  {
+    name: "Italian Sausage Pita",
+    description:
+      "Loose Italian sausage with green pepper, onion and Swiss, topped with Ranch or Italian dressing and pepperchini peppers, wrapped in pita bread",
+    price: "$10.00",
+  },
+  {
+    name: "Reuben Sandwich",
+    description:
+      "Thinly sliced corned beef with Swiss, sauerkraut and Russian dressing on grilled rye bread",
+    price: "$10.00",
+  },
+  {
+    name: "Turkey Reuben Sandwich",
+    description:
+      "Thinly sliced turkey with Swiss, sauerkraut and Russian dressing on grilled rye bread",
+    price: "$10.00",
+  },
+  {
+    name: "Chicken Hana",
+    description:
+      "Char-broiled chicken strips wrapped in pita with cheese, onion, letuce, tomato, salsa and sour cream",
+    price: "$10.00",
+  },
+  {
+    name: "Marge's Classic Club",
+    description:
+      "Toasted bread stacked with bacon, turkey, Swiss cheese, lettuce, tomato and mayonaise",
+    price: "$11.00",
+  },
+  {
+    name: "Grilled Cheese",
+    description: "",
+    price: "Single - $4.00",
+  },
+  {
+    name: "BLT",
+    description: "",
+    price: "$8.00",
+  },
+];
+
+export const dogs: MenuItem[] = [
+  {
+    name: "Coney Dog",
+    description: "Coney chili, onions & mustard",
+    price: "$4.00",
+  },
+  {
+    name: "Chicago Dog",
+    description: "Spicy brown mustard, onion, tomato, peppers & pickles",
+    price: "$4.00",
+  },
+  {
+    name: "Mexican Dog",
+    description: "Jalapenos, bacon, cheddar cheese & salsa",
+    price: "$4.00",
+  },
+  {
+    name: "New Yorker Dog",
+    description: "Spicy brown mustard, onion & tomato - grilled",
+    price: "$4.00",
+  },
+];
+
 export const extras: MenuItem[] = [
   {
     name: "Coney Chili",

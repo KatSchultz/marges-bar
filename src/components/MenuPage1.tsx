@@ -11,7 +11,7 @@ export default function MenuPage1() {
             <h3 className="menu-title font-black text-3xl text-red-600">
               Pre-Game Pleasers
             </h3>
-            <div className="small-apps grid grid-cols-2 ">
+            <div className="small-apps grid grid-cols-2 md:grid-cols-4 ">
               {appetizers.map((food) => (
                 <MenuItemDisplay food={food} />
               ))}
