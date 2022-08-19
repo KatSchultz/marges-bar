@@ -5,10 +5,10 @@ interface Props {
   food: MenuItem;
 }
 
-export default function Soups({ food }: Props) {
+export default function MenuItemDisplay({ food }: Props) {
   return (
     <div>
-      <div className="food-name text-lg font-bold">{food.name}</div>
+      <div className="food-name text-lg font-bold mt-3">{food.name}</div>
       <div>{food.description}</div>
       <div>{food.multiPrice1}</div>
       <div>{food.mulitPrice2}</div>

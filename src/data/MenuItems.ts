@@ -35,7 +35,7 @@ export const appetizers: MenuItem[] = [
   {
     name: "Onion Rings",
     description: "",
-    price: "0.0",
+    price: "",
     multiPrice1: "Side $6.00",
     mulitPrice2: "Basket $11.00",
   },
