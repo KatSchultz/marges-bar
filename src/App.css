@@ -1,14 +1,19 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/bricks.jpg);
+  background-size: cover;
+  overflow: hidden;
+  /* background: fixed; */
 }
 
-h1 {
+html {
+  overflow-y: scroll;
+}
+
+.large-title,
+.sub-title {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
-  text-shadow: 0px 5px 0.5rem black;
-}
-
-h1,
-h2 {
   text-shadow: 0px 5px 0.5rem black;
 }
 
