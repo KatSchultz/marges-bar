@@ -110,36 +110,84 @@ export const salad: MenuItem[] = [
 
 export const burgers: MenuItem[] = [
   {
-    name: "The Hat Trick",
+    name: "The Hat Trick*",
     description: "1/2 pound ground round w/bacon, ham, Swiss & American cheese",
-    price: "10.",
+    price: "10.00",
   },
   {
-    name: "Classic Burger",
+    name: "Classic Burger*",
     description: "With lettuce, tomato & onion",
     multiPrice1: "1/3 lb. - $7.00",
     mulitPrice2: "1/2 lb. - $8.00",
     price: "$10.00",
   },
   {
-    name: "Mushroom Swiss Burger",
+    name: "Mushroom Swiss Burger*",
     description:
       "Smothered with sauteed mushrooms, topped with Swiss cheese. Ask for grilled onion - WOW!",
     multiPrice1: "1/3 lb. - $8.50",
     mulitPrice2: "1/2 lb. - $9.50",
-    price: "0",
+    price: "",
   },
   {
-    name: "Bleu Cheese Burger",
+    name: "Bleu Cheese Burger*",
     description: "Topped with fresh bleu cheese",
     multiPrice1: "1/3 lb. - $8.00",
     mulitPrice2: "1/2 lb. - $8.50",
-    price: "0",
+    price: "",
   },
   {
-    name: "Mexican Burger",
+    name: "Mexican Burger*",
     description:
       "1/2 pound ground round with cheddar cheese, jalapeno peppers & salsa",
     price: "$9.50",
+  },
+];
+
+export const extras: MenuItem[] = [
+  {
+    name: "Coney Chili",
+    description: "",
+    price: "$3.00",
+  },
+  {
+    name: "Bleu Cheese",
+    description: "",
+    price: "$1.50",
+  },
+  {
+    name: "Dressings",
+    description: "",
+    price: "$1.00",
+  },
+  {
+    name: "Sour Cream",
+    description: "",
+    price: "$1.00",
+  },
+  {
+    name: "Cheese",
+    description: "",
+    price: "$1.00",
+  },
+  {
+    name: "Bacon",
+    description: "",
+    price: "$2.50",
+  },
+  {
+    name: "Ham",
+    description: "",
+    price: "$2.50",
+  },
+  {
+    name: "Pita Bread",
+    description: "",
+    price: "$2.50",
+  },
+  {
+    name: "Mushrooms",
+    description: "",
+    price: "$2.50",
   },
 ];
