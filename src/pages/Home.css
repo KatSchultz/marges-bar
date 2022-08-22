@@ -1,22 +1,27 @@
+.logo {
+  /* padding-top: 108px; */
+}
+
 .marges-logo {
+  padding-top: 108px;
   position: relative;
-  display: block;
+  /* display: block; */
   font-family: "Brush Script MT", "Brush Script Std", cursive;
-  font-size: 11rem;
+  font-size: 10rem;
   text-shadow: 0 0 0.2rem white, 0 0 0.8rem white, 0 0 1.5rem white,
     0 0 2rem red, 0 0 3rem red, 0 0 4rem red, 0 0 5rem red, 0 0 6rem red;
-
-  line-height: 8rem;
+  /* z-index: -10; */
 }
 
 .marges-logo::after {
+  padding-top: 108px;
   position: absolute;
   top: 0;
   left: 0;
   white-space: pre;
   content: "Marge's";
 
-  display: block;
+  /* display: block; */
   /* font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-size: 11rem; */
   height: 100%;
@@ -26,7 +31,8 @@
     0 0 8rem red, 0 0 10rem red, 0 0 16rem red, 0 0 20rem red;
 
   /* transition: opacity 1s ease-in-out; */
-  animation: opaque 5s infinite ease-in-out;
+  animation: opaque 4s infinite ease-in-out;
+  /* z-index: -15; */
 }
 
 @keyframes opaque {
@@ -44,4 +50,10 @@
 .logo {
   align-self: stretch;
   height: 60vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .marges-logo {
+    font-size: 14rem;
+  }
 }

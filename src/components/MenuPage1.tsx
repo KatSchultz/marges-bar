@@ -4,7 +4,7 @@ import MenuItemDisplay from "./MenuItemDisplay";
 
 export default function MenuPage1() {
   return (
-    <div className="menu-holder bg-white m-12 ">
+    <div className="menu-holder bg-white m-6 ">
       <div className="first-page p-2">
         <div className="border-div border-2 border-red-600 p-4 m-4 ">
           <div className="apps">
@@ -26,7 +26,7 @@ export default function MenuPage1() {
             <h3 className="menu-title font-black text-3xl text-red-600 mt-4">
               Soups & Salads
             </h3>
-            <div className="flex flex-col md:flex-row justify-center  ">
+            <div className="flex flex-col md:flex-row justify-around  ">
               <div className="soups">
                 {soups.map((food) => (
                   <MenuItemDisplay food={food} />

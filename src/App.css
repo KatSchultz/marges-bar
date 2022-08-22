@@ -6,7 +6,9 @@
   overflow: hidden;
   /* background: fixed; */
 }
-
+* {
+  box-sizing: border-box;
+}
 html {
   overflow-y: scroll;
 }
@@ -15,6 +17,10 @@ html {
 .sub-title {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   text-shadow: 0px 5px 0.5rem black;
+}
+
+.routes {
+  padding-top: 108px;
 }
 
 /* h1,

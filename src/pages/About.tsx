@@ -1,5 +1,6 @@
 import React from "react";
 import circle1 from "../images/circle1.png";
+import round1 from "../images/round-1.png";
 
 export default function About() {
   return (
@@ -19,7 +20,11 @@ export default function About() {
           Marge's Bar Band continues to bring you live traditional jazz at this
           beloved Eastside Venue.
         </p>
-        <img className="image relative top-0 right-0 " src={circle1} alt="" />
+        <img
+          className="image relative top-0 right-0 w-56 "
+          src={round1}
+          alt=""
+        />
       </div>
     </div>
   );

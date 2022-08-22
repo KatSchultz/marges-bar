@@ -2,7 +2,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="logo flex flex-col place-content-center h-full w-full">
+    <div className="logo flex flex-col place-content-center h-screen w-full">
       <h3 className="marges-logo  text-white">Marge's</h3>
       {/* 
       <h3 className="marges-logo text-white">
