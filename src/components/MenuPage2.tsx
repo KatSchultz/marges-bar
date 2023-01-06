@@ -28,7 +28,7 @@ export default function MenuPage2() {
             </div>
             <div className="small-apps flex flex-col md:grid md:grid-cols-2 ">
               {burgers.map((food) => (
-                <MenuItemDisplay food={food} />
+                <MenuItemDisplay food={food} key={food.id} />
               ))}
             </div>
 
@@ -41,7 +41,7 @@ export default function MenuPage2() {
                 <div className="">
                   <div className="">
                     {extras.map((food) => (
-                      <ExtrasLayout food={food} />
+                      <ExtrasLayout food={food} key={food.id} />
                     ))}
                   </div>
                 </div>

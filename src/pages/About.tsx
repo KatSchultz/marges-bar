@@ -1,10 +1,8 @@
-import React from "react";
-import circle1 from "../images/circle1.png";
 import round1 from "../images/round-1.png";
 
 export default function About() {
   return (
-    <div className="about-body bg-white mx-12 p-4">
+    <div className="about-body bg-white m-6 p-4">
       <div className="head-about">
         <h2 className="text-2xl">A Grosse Pointe Establishment Since 1966</h2>
         <h3 className="pb-5 text-xl">Famous for Burgers, Wings and Sports</h3>

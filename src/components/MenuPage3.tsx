@@ -27,7 +27,7 @@ export default function MenuPage3() {
             </div>
             <div className="sandwiches flex flex-col md:grid md:grid-cols-2 ">
               {sandwiches.map((food) => (
-                <MenuItemDisplay food={food} />
+                <MenuItemDisplay food={food} key={food.id} />
               ))}
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function MenuPage3() {
             <div className="">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {dogs.map((food) => (
-                  <MenuItemDisplay food={food} />
+                  <MenuItemDisplay food={food} key={food.id} />
                 ))}
               </div>
             </div>

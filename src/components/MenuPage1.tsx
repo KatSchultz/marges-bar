@@ -13,12 +13,12 @@ export default function MenuPage1() {
             </h3>
             <div className="small-apps grid grid-cols-2 md:grid-cols-4 ">
               {appetizers.map((food) => (
-                <MenuItemDisplay food={food} />
+                <MenuItemDisplay food={food} key={food.id} />
               ))}
             </div>
             <div className="big-apps">
               {bigApps.map((food) => (
-                <MenuItemDisplay food={food} />
+                <MenuItemDisplay food={food} key={food.id} />
               ))}
             </div>
           </div>
@@ -29,12 +29,12 @@ export default function MenuPage1() {
             <div className="flex flex-col md:flex-row justify-around  ">
               <div className="soups">
                 {soups.map((food) => (
-                  <MenuItemDisplay food={food} />
+                  <MenuItemDisplay food={food} key={food.id} />
                 ))}
               </div>
               <div className="soups flex flex-col justify-center">
                 {salad.map((food) => (
-                  <MenuItemDisplay food={food} />
+                  <MenuItemDisplay food={food} key={food.id} />
                 ))}
                 <div className="carry-out border-2 border-red-600 max-w-sm mt-3 m-auto p-4 ">
                   <div>Carry-Out Available</div>
