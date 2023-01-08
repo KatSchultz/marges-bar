@@ -2,8 +2,13 @@ import React from "react";
 import Map from "../components/Map";
 
 export default function About() {
+  const styles = {
+    width: "400px",
+    height: "400px",
+  };
+
   return (
-    <div className="about-body bg-white w-full m-6 p-4 flex flex-col md:flex-row justify-around items-center">
+    <div className="about-body bg-white w-full m-6 p-4 flex flex-col md:flex-row justify-around items-center ">
       <div className="contact-info p-4">
         <div className="description">
           <h2 className="text-2xl ">Marge's Bar</h2>

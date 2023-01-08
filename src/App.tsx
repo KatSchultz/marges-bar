@@ -17,7 +17,7 @@ function App() {
             <h2 className="med-title text-white text-xl">Bar and Grill</h2>
           </div>
           <nav className="shadow-lg z-10 ">
-            <ul className="text-white flex flex-row justify-around mt-4">
+            <ul className="text-white flex flex-row justify-around mt-2">
               <li className="w-full">
                 <Link to={"/"}>Home</Link>
               </li>

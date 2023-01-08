@@ -6,7 +6,10 @@
   padding-top: 108px;
   position: relative;
   /* display: block; */
-  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  /* font-family: "Brush Script MT", "Brush Script Std", cursive;
+   */
+  font-family: "Pacifico", cursive;
+
   font-size: 10rem;
   text-shadow: 0 0 0.2rem white, 0 0 0.8rem white, 0 0 1.5rem white,
     0 0 2rem red, 0 0 3rem red, 0 0 4rem red, 0 0 5rem red, 0 0 6rem red;
