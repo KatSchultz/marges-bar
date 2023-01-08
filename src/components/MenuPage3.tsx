@@ -23,7 +23,6 @@ export default function MenuPage3() {
                   Onion Rings - $6.00
                 </p>
               </div>
-              {/* <div className="info-divider border-b-2 border-gray-500 m-2 w-5/6"></div> */}
             </div>
             <div className="sandwiches flex flex-col md:grid md:grid-cols-2 ">
               {sandwiches.map((food) => (

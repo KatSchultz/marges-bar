@@ -1,11 +1,5 @@
-import { config } from "../config";
-import {
-  GoogleMap,
-  LoadScript,
-  MarkerF,
-  useJsApiLoader,
-} from "@react-google-maps/api";
-import { useCallback, useEffect, useRef } from "react";
+import { GoogleMap, MarkerF } from "@react-google-maps/api";
+import { useCallback, useRef } from "react";
 
 export default function Map() {
   const mapRef = useRef<GoogleMap>();
@@ -20,7 +14,12 @@ export default function Map() {
     lng: -82.94245176441804,
   };
 
-  const label = "Marge's Bar";
+  // const label = {
+  //   text: "Marge's Bar",
+  //   fontWeight: "600",
+  //   fontSize: "1.25rem",
+  //   color: "black",
+  // };
 
   const onLoad = useCallback((map: any) => (mapRef.current = map), []);
 
@@ -28,11 +27,10 @@ export default function Map() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={16}
+      zoom={18}
       onLoad={onLoad}
     >
-      {/* Child components, such as markers, info windows, etc. */}
-      <MarkerF position={center} label={label} />
+      <MarkerF position={center} />
     </GoogleMap>
   );
 }

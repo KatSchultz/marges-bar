@@ -1,12 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Contact from "./pages/Contact";
-import Events from "./pages/Events";
-import Photos from "./pages/Photos";
 import About from "./pages/About";
 import { LoadScript } from "@react-google-maps/api";
 import { config } from "./config";
@@ -31,15 +27,6 @@ function App() {
               <li className="w-full">
                 <Link to={"/about"}>About Us</Link>
               </li>
-              <li className="w-full">
-                <Link to={"/contact"}>Contact Us</Link>
-              </li>
-              {/* <li>
-              <Link to={"/events"}>Events</Link>
-            </li>
-            <li>
-              <Link to={"/photos"}>Photos</Link>
-            </li> */}
             </ul>
           </nav>
         </header>
@@ -47,10 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/menu" element={<Menu />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/about" element={<About />} />
-            <Route path="/events" element={<Events />}></Route>
-            <Route path="/photos" element={<Photos />}></Route>
+            <Route path="/about" element={<About />}></Route>
           </Routes>
         </section>
       </LoadScript>

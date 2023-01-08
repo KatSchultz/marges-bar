@@ -1,28 +1,36 @@
-import round1 from "../images/round-1.png";
+import React from "react";
+import Map from "../components/Map";
 
 export default function About() {
   return (
-    <div className="about-body bg-white m-6 p-4">
-      <div className="head-about">
-        <h2 className="text-2xl">A Grosse Pointe Establishment Since 1966</h2>
-        <h3 className="pb-5 text-xl">Famous for Burgers, Wings and Sports</h3>
+    <div className="about-body bg-white w-full m-6 p-4 flex flex-col md:flex-row justify-around items-center">
+      <div className="contact-info p-4">
+        <div className="description">
+          <h2 className="text-2xl ">Marge's Bar</h2>
+          <p className="pb-5">
+            The friendliest sports bar in the Metro Detroit area caters to fans
+            of all ages. Featuring great food, sports, entertainments and
+            drinks. A home town favorite.
+          </p>
+        </div>
+        <div className="hours">
+          <h2 className="text-2xl">Hours</h2>
+          <p>Monday - Friday: 11AM - 2AM</p>
+          <p>Saturday & Sunday: 12PM - 2AM</p>
+        </div>
+        <div className="phone">
+          <h3 className="text-2xl pt-4">Call Us</h3>
+          <p>313-881-8895</p>
+        </div>
+        <div className="address">
+          <h3 className="text-2xl pt-4">Visit Us</h3>
+          <p>15300 Mack Ave</p>
+          <p>Grosse Pointe Park, MI 48230</p>
+        </div>
       </div>
-      <div className="body-about relative">
-        <p className="pb-5">
-          The friendliest sports bar in the Metro Detroit area caters to fans of
-          all ages. Featuring great food, sports, entertainments and drinks. A
-          home town favorite where you may spot a famous hockey player.
-        </p>
-        <p>Everyday 2nd & 4th Thursday of the month 7pm-10pm</p>
-        <p>
-          Marge's Bar Band continues to bring you live traditional jazz at this
-          beloved Eastside Venue.
-        </p>
-        <img
-          className="image relative top-0 right-0 w-56 "
-          src={round1}
-          alt=""
-        />
+
+      <div className="map p-4">
+        <Map />
       </div>
     </div>
   );

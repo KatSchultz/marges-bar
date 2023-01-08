@@ -21,18 +21,13 @@
   white-space: pre;
   content: "Marge's";
 
-  /* display: block; */
-  /* font-family: "Brush Script MT", "Brush Script Std", cursive;
-  font-size: 11rem; */
   height: 100%;
   width: 100%;
 
   text-shadow: 0 0 0.6rem white, 0 0 1.2rem white, 0 0 2rem white, 0 0 6rem red,
     0 0 8rem red, 0 0 10rem red, 0 0 16rem red, 0 0 20rem red;
 
-  /* transition: opacity 1s ease-in-out; */
   animation: opaque 4s infinite ease-in-out;
-  /* z-index: -15; */
 }
 
 @keyframes opaque {
